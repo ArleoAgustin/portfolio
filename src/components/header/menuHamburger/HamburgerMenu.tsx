@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from 'react';
 import style from './HamburgerMenu.module.css';
 import { useTranslation } from "react-i18next";
 import iconClose from "../../../assets/x.svg";
-
 interface HamburgerMenuProps {
   handleScrollToSection: (sectionId: string) => void;
   activeSection: string;
@@ -31,17 +30,6 @@ function HamburgerMenu({ handleScrollToSection, activeSection }: HamburgerMenuPr
     };
   }, []);
 
-  useEffect(() => {
-    // Toggle no-scroll class on body when menu is open
-    if (isOpen) {
-      document.body.classList.add('no-scroll');
-    }
-    return () => {
-      // Remove the class on component unmount or when the menu is closed
-      document.body.classList.remove('no-scroll');
-    };
-  }, [isOpen]);
-
   return (
     <div className={style.menuContainer} ref={menuRef}>
       <button className={style.hamburgerButton} onClick={toggleMenu}>
@@ -52,7 +40,8 @@ function HamburgerMenu({ handleScrollToSection, activeSection }: HamburgerMenuPr
       {isOpen && (
         <nav className={`${style.menu} ${isOpen ? style.open : ''}`}>
           <div className={style.iconClose}>
-            <img onClick={toggleMenu} className={style.icon} src={iconClose} alt="" />
+            <h1 className={style.textH1}>A.</h1>
+            <img onClick={toggleMenu}  className={style.icon} src={iconClose} alt="" />
           </div>
           <ul className={style.menuList}>
             {["banner", "about", "skills", "projects", "contact"].map((sectionId) => (
@@ -65,10 +54,12 @@ function HamburgerMenu({ handleScrollToSection, activeSection }: HamburgerMenuPr
                 }}
               >
                 <span>{t(`header_${sectionId}`)}</span>
+                
               </li>
             ))}
           </ul>
-          <div className={style.containerIcons}></div>
+          <div className={style.containerIcons}>
+          </div>
         </nav>
       )}
     </div>
