@@ -1,0 +1,42 @@
+{
+    "header_banner": "Home",
+    "header_welcome": "Welcome",
+    "header_about": "About",
+    "header_skills": "Skills",
+    "header_contact": "Contact me",
+    "header_projects": "Projects",
+
+    "banner_hello": "Hello!",
+    "banner_name": "I'm Agustin",
+    "banner_description": "Web developer & designer",
+    "banner_button": "ABOUT ME",
+
+    "about_title": "About me",
+    "about_description": "I have 24 years old and I live in the city of Tandil, province of Buenos Aires, Argentina. When I was twenty, I began studying the technical career in computer application development at the Faculty of Exact Sciences of the National University of the Center of the Province of Buenos Aires. I have recently finished my course and I feel ready to enter the professional world. I have been carrying out projects both individually and as part of a team, which have given me the necessary knowledge to enter the world of web development. I have very little experience, but I am eager continue to learning.",
+
+    "skills_title": "Skills",
+    "skills_tools": "Tools",
+
+    "project_title": "Projects",
+    "project_d1": "description",
+    "project_d2": "description",
+    "project_d3": "description",
+
+    "linkedin": "Linkedin Profile",
+
+    "contact_title": "Contact me",
+    "contact_contactInfo": "Contact information",
+    "contact_name": "Name",
+    "contact_email": "Email",
+    "contact_numberPhone": "Phone number",
+    "contact_message": "Message",
+    "contact_send": "Send",
+
+    "placeHolder_name": "Type your name",
+    "placeHolder_email": "Type your email",
+    "placeHolder_numberPhone": "Type your phone number",
+    "placeHolder_message": "Type your message",
+
+    "textFooter": "Developed & designed by Agustin Arleo"
+    
+}

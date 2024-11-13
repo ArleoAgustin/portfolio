@@ -1,0 +1,33 @@
+.buttonSend {
+    font-family: var(--font-family);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: var(--border-radiusButton);
+    cursor: pointer;
+    color: var(--colorTextButton);
+    transition: var(--transitionButton);
+    position: relative;
+    left: 0%;
+    margin-top: 6%;
+    max-width: var(--max-widthButton);
+    min-width: 33vw;
+
+    padding: 3% 3%;
+    font-size: 98%;
+}
+
+.buttonSend:hover {
+    background-color: var(--colorHoverButton);
+    transition: var(--transitionButton);
+    color: var(--colorTextButtonHover);
+    box-shadow: var(--box-shadowButton);
+}
+
+@media (min-width: 1100px) {
+
+    .buttonSend{
+        padding: var(--paddingButton);
+        font-size: var(--fontSizeButton);
+        min-width: 38%;
+    }
+}

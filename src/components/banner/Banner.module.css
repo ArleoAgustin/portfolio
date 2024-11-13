@@ -1,0 +1,153 @@
+.containerBanners{
+  padding: 51% 0%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#000000e8 0.9px, var(--background-color) 0.9px);
+  background-size: 18px 18px;
+  opacity: 1;
+}
+
+.containerHello{
+  max-width: 74%;
+  margin-top: 3%;
+  padding-bottom: 5%;
+}
+
+.span{
+  font-size: 27px;
+  font-weight: 200;
+}
+
+.h1{
+  font-size: 43px;
+  font-weight: 600;
+  margin-top: 0;
+  width: fit-content;
+  margin-bottom: 0;
+  text-wrap-mode: nowrap;
+}
+
+.description{
+  width: 57%;
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 6px;
+  margin-left: 0;
+  color: var(--text-colorWhitTransparency);
+}
+
+.animation {
+  width: 94%;
+  transform: rotate(95deg);
+  margin-top: 5%;
+}
+
+.containerAnimation {
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+  padding-top: 3.5vw;
+}
+
+@media (min-width: 1100px) {
+
+.containerBanners {
+  padding: 15% 0%;
+}
+
+.containerHello {
+  max-width: min-content;
+
+}
+
+.span {
+  font-size: 39px;
+}
+
+.h1 {
+  font-size: 54px;
+}
+
+.description {
+  font-size: 26px;
+  width: fit-content;
+}
+
+.containerImg {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 2%;
+  padding: 4% 13%;
+  font-size: 23px;
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--secondary-color);
+  border-radius: 3px;
+}
+
+.img {
+  width: 96%;
+}
+
+.containerImg {
+  position: relative;
+  display: inline-block; /* Asegura que el contenedor tome el tamaño de la imagen */
+}
+
+.containerImg::before {
+  content: "";
+  position: absolute;
+  top: 48%;
+  left: 38%;
+  width: 127%;
+  height: 104%;
+  background-color: var(--accent-color);
+  border-radius: 50% 50% 0% 0%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 84%;
+  height: auto;
+}
+
+
+
+
+@media (min-width: 1900px) {
+
+  .containerBanners{
+    padding: 13% 0%;
+  }
+  .containerAnimation {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    padding-top: 2.5vw;
+  }
+
+  .animation {
+    width: 98%;
+    transform: rotate(95deg);
+    margin-top: 5%;
+  }
+
+
+
+}
+}

@@ -1,0 +1,102 @@
+/* General styling for the projects section */
+.projects {
+  background: linear-gradient(360deg, #fcc52066, rgba(44, 44, 44, 1));
+  padding-bottom: 10%;
+  padding-top: 10%;
+  }
+  
+  /* Container for the title with underline */
+  .containerTitle {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 9%;
+  }
+  
+  .titleProjects {
+    font-size: 32px;
+    color: #FFFFFF;
+    position: relative;
+    margin-bottom: 0;
+  }
+  
+  .titleProjects::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: var(--colorLineTitle);
+    position: absolute;
+    bottom: -2px;
+    left: 26%;
+    transform: translateX(-50%);
+    box-shadow: var(--boxShadowTitle);
+  }
+  
+  /* Content container for projects */
+  .projectsContent {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .projectsCards{
+    width: 59%;
+    display: flex;
+    padding: 4% 4%;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 15px;
+    background: #2b2c2cc9;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 50%);
+  }
+  
+  /* Individual project box styling */
+  .project {
+    padding: 1%;
+    box-shadow: var(--box-shadowButton);
+    background-color: var(--colorHoverButton);
+    border-radius: 9px;
+  }
+  
+
+  @media (min-width: 1100px) {
+
+
+    .projects{
+      padding-top: 2%;
+    }
+
+    .containerTitle {
+      margin-bottom: 1%;
+    }
+
+    .titleProjects {
+      font-size: 50px;
+      margin-bottom: 3%;
+    }
+
+    .titleProjects::after {
+      height: 4px;
+      background-color: var(--accent-color);
+      bottom: -10px;
+      left: 50%;
+    }
+
+    .projectsContent {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .projectsCards{
+      margin: 0 26%;
+      width: fit-content;
+    }
+
+  }

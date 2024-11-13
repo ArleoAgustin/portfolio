@@ -1,0 +1,221 @@
+.containerContact {
+  padding-top: 10%;
+  color: var(--text-color);
+  padding-bottom: 2%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(39, 37, 37, 1),
+    rgba(44, 44, 44, 1)
+  );
+}
+
+.titleContact {
+  font-family: var(--font-family);
+  font-size: 32px;
+  width: fit-content;
+  margin-bottom: 5%;
+}
+
+.titleContact::after {
+  content: "";
+  display: block;
+  width: 8%;
+  height: 4px;
+  background-color: #ffaf00;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: var(--boxShadowTitle);
+}
+
+.containerInfoForm {
+  display: flex;
+  flex-direction: row;
+  padding: 2% 0%;
+  width: 100%;
+}
+
+.containerInfoContact {
+  margin-right: 20px;
+  width: 30%;
+  margin-left: 7%;
+}
+
+.containerTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7%;
+}
+
+.titleContactInfo {
+  font-family: var(--font-family-secondary);
+  font-size: 23.5px;
+  width: fit-content;
+  margin-bottom: 8%;
+  position: relative;
+  font-weight: 300;
+}
+
+.containerForm {
+  width: 52%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.containerInput {
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: var(--font-family);
+  margin-bottom: 5px;
+  color: #8b8b86;
+}
+
+.input,
+.textArea {
+  font-family: var(--font-family);
+  border: none;
+  padding: 14px;
+  background-color: var(--skillColor);
+  border-radius: 3px;
+  color: white;
+
+}
+
+.textArea{
+  max-width: 94%;
+  width: 498px;
+  height: 48px;
+}
+
+.input:focus,
+.textArea:focus {
+  outline: none;
+  box-shadow: 0px 10px 14px 0px rgba(0, 12, 29, 0.1);
+}
+
+.button {
+  padding: 10px 20px;
+  font-family: var(--font-family);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 25%;
+  font-size: var(--fontSizeButton);
+  color: var(--colorTextButton);
+  transition: var(--transitionButton);
+}
+
+.button:hover {
+  background-color: var(--text-color);
+  transition: var(--transitionButton);
+  color: var(--colorTextButton);
+  box-shadow: var(--box-shadowButton);
+}
+
+
+.animation{
+  width: 11%;
+  position: absolute;
+  left: 10%;
+  top: 189.5rem;
+  z-index: 1;
+}
+
+@media (min-width: 1100px) {
+
+  .containerContact{
+    padding-top: 4%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .containerInfoContact{
+    margin-right: 20px;
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .titleContact{
+    margin-bottom: 3%;
+  }
+
+  .titleContact{
+    font-size: 50px;
+  }
+
+  .containerTitle{
+    margin-bottom: 0%;
+  }
+
+  .animation{
+    width: 9%;
+    position: absolute;
+    left: 80%;
+    top: 229vw;
+    z-index: 0;
+  }
+
+  .titleContactInfo {
+    font-family: var(--font-family-secondary);
+    font-size: 23.5px;
+    width: fit-content;
+    margin-bottom: 8%;
+    position: relative;
+    font-weight: 300;
+  }
+  
+  .containerUbication,
+  .containerEmail,
+  .containerLinkedin {
+    display: flex;
+    color: var(--text-colorWhitTransparency);
+    font-weight: 300;
+    align-items: center;
+    margin-bottom: 21px;
+    width: 100%;
+    text-wrap-mode: nowrap;
+  }
+  
+  .iconLocation,
+  .iconEmail,
+  .iconLinkedin {
+    margin-left: 10px;
+    font-family: var(--font-family);
+    width: 30px;
+    margin-right: 4%;
+    margin-top: 0%;
+  }
+  
+  
+  .urlLinkedin {
+    text-decoration: none;
+    color: var(--text-colorWhitTransparency);
+    font-weight: 300;
+  }
+  
+  .urlLinkedin:hover {
+    color: var(--accent-color);
+  }
+  
+
+  @media (min-width: 1900px) {
+
+    .animation{
+      width: 9%;
+      position: absolute;
+      left: 84%;
+      top: 214vw;
+      z-index: 0;
+    }
+  }
+}

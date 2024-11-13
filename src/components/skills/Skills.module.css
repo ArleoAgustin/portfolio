@@ -1,0 +1,280 @@
+/* Contenedor principal de habilidades */
+.skills {
+    padding-bottom: 6%;
+    background: linear-gradient(360deg, rgba(39, 37, 37, 1), rgba(44, 44, 44, 1));
+    padding-top: 11%;
+}
+
+/* Contenedor del título */
+.containerTitle {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Título de habilidades */
+.titleSkills {
+    width: fit-content;
+    position: relative;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+/* Línea decorativa debajo del título */
+.titleSkills::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 26%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: var(--colorLineTitle);
+    box-shadow: var(--boxShadowTitle);
+}
+
+.containerTitleSkill{
+    width: 100%;
+}
+
+/* Contenedor de las tarjetas de habilidades */
+.skillsContent {
+    display: column;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 13%;
+}
+
+/* Estilos de la tarjeta de habilidad */
+.skill1 , .skill2, .skill3{
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1;
+    padding-bottom: 5%;
+}
+
+
+
+
+/* Animación de rotación del borde */
+
+
+/* Títulos dentro de las tarjetas */
+.skills h2 {
+    
+    font-weight: 700;
+    background: linear-gradient(90deg, #a3a3a3, var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    z-index: 1;
+
+    width: fit-content;
+    font-size: 148%;
+    border-bottom: 2px solid var(--accent-color);
+    padding-top: 2%;
+    text-align: start;
+    padding-left: 6%;
+    margin-right: 69%;
+}
+
+/* Lista de habilidades dentro de cada tarjeta */
+.skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(79px, 1fr));
+    gap: 2rem;
+    width: 84%;
+    justify-items: center;
+    padding: 0;
+    z-index: 1;
+    padding: 7% 0;
+}
+
+.skills li {
+    width: fit-content;
+    margin: 5%;
+    text-wrap-mode: nowrap;
+    border-radius: 10px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+/* Efecto hover en los elementos de la lista */
+.skill li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* Iconos de las habilidades */
+.skills img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12%;
+}
+
+span {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+@media (min-width: 1100px) {
+
+    .skills{
+        padding-top: 2%;
+        padding-bottom: 8%;
+    }
+
+    .titleSkills{
+        font-size: 50px;
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+
+    .titleSkills::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 4px;
+        background-color: var(--colorLineTitle);
+        box-shadow: var(--boxShadowTitle);
+    
+    }
+
+    .containerTitleSkill{
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .skillsContent{
+        margin-top: 0;
+        display: flex;
+    }
+
+
+    .skill1 , .skill2, .skill3{
+        position: relative;
+        width: 20%;
+        background-color: var(--skillColor);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: 0px 0px 20px 0px rgb(105 104 93 / 50%);
+        padding: 1% 0%;
+    }
+
+    .skills h2 {
+
+        font-size: 2rem;
+        width: fit-content;
+        border-bottom: none;
+        padding-top: 0;
+        text-align: center;
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+    .skills ul {
+        width: 67%;
+    }
+
+    .skills img {
+        width: 50px;
+        height: 50px;
+    }
+
+    span {
+        font-size: 15px;
+    }
+
+    .skill1::before, .skill2::before, .skill3::before {
+    content: "";
+    position: absolute;
+    top: -21%;
+    padding: 0%;
+    left: 26%;
+    height: 139%;
+    width: 48%;
+    background-image: conic-gradient(var(--accent-color) 180deg, transparent 75deg);
+}
+
+.skill1::before {
+    animation: rotar 7.5s linear infinite;
+}
+
+.skill2::before {
+    animation: rotar2 7.5s linear infinite;
+}
+
+.skill3::before {
+    animation: rotar3 7.5s linear infinite;
+}
+
+/* Fondo interno de la tarjeta */
+.skill1::after ,.skill2::after, .skill3::after {
+    content: "";
+    position: absolute;
+    top: 4.2px;
+    left: 1%;
+    height: 98.2%;
+    width: 98%;
+    background-color: var(--skillColor);
+    border-radius: 12px;
+}
+
+
+/* Animación de rotación del borde */
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotar2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotar3 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+}
+
+@media (min-width: 1900px) {
+    
+}
+

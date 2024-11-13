@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --background-color: #2b2c2c;
+  --secondary-color: #272525;
+  --font-family: 'Poppins', sans-serif;
+  --accent-color: #fcc520;
+  /*--------------buttons--------------------------------------*/
+  --box-shadowButton: 0px 0px 10px 0px rgb(197 192 36 / 50%);
+  --colorHoverButton: #cda839;
+  --colorTextButton: #000000;
+  --colorTextButtonHover: #ffffff;
+  --max-widthButton: 27%;
+  --transitionButton: all 0.3s;
+  --paddingButton: 12px 20px;
+  --border-radiusButton: 4px;
+  --text-color: #ffffff;
+  --boxShadowTitle: 0px 0px 6px 2px rgb(197 192 36 / 50%);
+  --colorLineTitle: var(--accent-color);
+  --skillColor: #41413f;
+  --secondary-color: #272525;
+  /*------------------------------------------*/
+  --breakpoint-mobile-small: 480px;
+  --breakpoint-mobile-large: 767px;
+  --breakpoint-tablet: 1023px;
+  --breakpoint-desktop-small: 1279px;
+  --breakpoint-desktop: 1919px;
+}
+/*
+:root[data-theme='light'] {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --text-colorWhitTransparency: #4d4a4a;
+    --primary-color: #1976d2;
+    --secondary-color: #f5f5f5;
+  }
+  
+  :root[data-theme='dark'] {
+    --background-color: #2b2c2c;
+    --text-color: #ffffff;
+    --text-colorWhitTransparency: #a9a2a2;
+    --primary-color: #90caf9;
+    --secondary-color: #272525;
+    --skillColor: #41413f;
+  }
+*/
+  /* Modo claro *//*
+html[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+*/
+/* Modo oscuro *//*
+html[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+  */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    font-family: var(--font-family);
+  }
+
+  /* Para Chrome, Safari y Edge */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0000003d;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #896464;
+  border-radius: 3px;
+  border: 3px solid #3f282800;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

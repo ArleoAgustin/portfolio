@@ -1,0 +1,108 @@
+.inputName .MuiOutlinedInput-root {
+  border-radius: 8px;
+  font-family: var(--font-family);
+  margin-bottom: 3%;
+  background-color: white;
+}
+
+.inputName .MuiInputLabel-root {
+  font-family: var(--font-family);
+  color: rgb(0 0 0 / 46%);
+  font-size: 87%;
+}
+
+label {
+  margin-left: 1%;
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.textArea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 5rem;
+  min-height: 5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 4%;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.textArea ::placeholder{
+    color: rgb(0 0 0 / 46%);
+}
+
+.textarea:focus {
+  box-shadow: 0px 0px 10px 0px rgba(188, 188, 188, 0.5); /* Deja solo una declaración de box-shadow */
+  
+}
+
+textarea:focus-visible {
+
+  box-shadow: 0px 0px 10px 0px rgba(188, 188, 188, 0.5);
+  border: none
+}
+
+textarea:hover {
+  border-color: rgba(191, 191, 191, 0.87);
+  box-shadow: 0px 0px 10px 0px rgba(188, 188, 188, 0.5);
+  transition: all 0.3s;
+}
+
+textArea:active{
+  border-color: rgba(191, 191, 191, 0.87);
+}
+
+.MuiInputLabel-root- .MuiInputLabel-root.Mui-focused {
+box-shadow: 0px 0px 10px 0px rgb(188 188 188 / 50%);
+}
+
+
+.containerContact {
+    padding-top: 10%;
+    color: var(--text-color);
+    padding-bottom: 2%;
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(39, 37, 37, 1),
+      rgba(44, 44, 44, 1)
+    );
+  }
+  
+  .titleContact {
+    font-family: var(--font-family);
+    font-size: 32px;
+    width: fit-content;
+    margin-bottom: 5%;
+  }
+  
+  .titleContact::after {
+    content: "";
+    display: block;
+    width: 33%;
+    height: 2px;
+    background-color: var(--colorLineTitle);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: var(--boxShadowTitle);
+  }
+
+  @media (min-width: 1100px){
+
+    .titleContact::after {
+      content: "";
+      display: block;
+      width: 7%;
+      height: 2px;
+      background-color: var(--colorLineTitle);
+      position: absolute;
+      left: 52.4vw;
+      transform: translateX(-50%);
+      box-shadow: var(--boxShadowTitle);
+      }
+  }

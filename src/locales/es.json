@@ -1,0 +1,43 @@
+{
+
+    "header_banner": "Inicio",
+    "header_welcome": "Bienvenido",
+    "header_about": "Sobre mi",
+    "header_skills": "Habilidades",
+    "header_contact": "Contacto",
+    "header_projects": "Proyectos",
+
+    "banner_hello": "Hola!",
+    "banner_name": "Soy Agustin",
+    "banner_description": "Desarrollador web y diseñador",
+    "banner_button": "SOBRE MI",
+
+    "about_title": "Sobre mi",
+    "about_description": "Tengo 24 años y vivo en la ciudad de Tandil, provincia de Buenos Aires, Argentina. A los veinte años comencé a estudiar la carrera técnicatura en desarrollo de aplicaciones informáticas en la Facultad de Ciencias Exactas de la Universidad Nacional del Centro de la Provincia de Buenos Aires. Recientemente terminé mis estudios y me siento preparado para entrar al mundo profesional. He trabajado en proyectos tanto de forma individual como en equipo, lo que me ha brindado el conocimiento necesario para comenzar en el mundo del desarrollo web. Tengo poca experiencia, pero muchas ganas de seguir aprendiendo.",
+
+    "skills_title": "Habilidades",
+    "skills_tools": "Herramientas",
+
+    "project_title": "Proyectos",
+    "project_d1": "descripcion",
+    "project_d2": "descripcion",
+    "project_d3": "descripcion",
+
+    "linkedin": "Perfil de Linkedin",
+
+    "contact_title": "Contacto",
+    "contact_contactInfo": "Información de contacto",
+    "contact_name": "Nombre",
+    "contact_email": "Correo electrónico",
+    "contact_numberPhone": "Número de teléfono",
+    "contact_message": "Mensaje",
+    "contact_send": "Enviar",
+
+    "placeHolder_name": "Ingrese su nombre",
+    "placeHolder_email": "Ingrese su correo electrónico",
+    "placeHolder_numberPhone": "Ingrese su número de teléfono",
+    "placeHolder_message": "Ingrese su mensaje",
+
+    "textFooter": "Desarrollado & diseñado por Agustin Arleo"
+
+}
