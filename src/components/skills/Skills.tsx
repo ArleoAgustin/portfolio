@@ -15,7 +15,7 @@ import iconFigma from "../../assets/iconFigma.svg";
 import iconTrello from "../../assets/iconTrello.svg";
 import iconDocker from "../../assets/iconDocker.svg";
 import iconTypescript from "../../assets/iconTypescript.svg";
-import { Slide } from "react-awesome-reveal";
+/*import { Slide } from "react-awesome-reveal";*/
 
 function Skills() {
   const { t } = useTranslation();
