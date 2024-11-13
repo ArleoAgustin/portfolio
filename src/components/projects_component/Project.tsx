@@ -2,7 +2,7 @@ import CardProject from "./card/CardProject";
 import styles from "./Project.module.css";
 import { useTranslation } from "react-i18next";
 import imgProject1 from "../../assets/infoDolar.png";
-import imgProject2 from "../../assets/miviandita.png";
+import imgProject2 from "../../assets/miViandita.png";
 import iconReact from "../../assets/iconReact.svg";
 import iconTypescript from "../../assets/iconTypescript.svg";
 import iconHtml from "../../assets/iconHtml.svg";
