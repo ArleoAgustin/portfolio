@@ -4,7 +4,7 @@ import iconHtml from "../../assets/iconHtml.svg";
 import iconCss from "../../assets/iconCss.svg";
 import iconJs from "../../assets/iconJavascript.svg";
 import iconReact from "../../assets/iconReact.svg";
-import iconSpringBoot from "../../assets/iconSpring-Boot.svg";
+import iconSpringBoot from "../../assets/iconSpring-boot.svg";
 import iconJava from "../../assets/iconJava.svg";
 import iconMysql from "../../assets/iconMysql.svg";
 import iconPhp from "../../assets/iconPhp.svg";
