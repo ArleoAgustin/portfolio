@@ -29,7 +29,7 @@ export default function CardProject({urlImg, title, description, urlLink, urlGit
         </div>
         
         <div className={style.description}>
-          <p>{description} Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius quibusdam expedita reiciendis enim, nulla dolorem itaque illo, odit eligendi deserunt sapiente minus. Cum magni animi aliquam eaque, iure quasi. Ipsum?</p>
+          <p>{description}</p>
           </div>
       </CardContent>
       <CardActions className={style.containerIcons}>
