@@ -33,7 +33,7 @@ function Project() {
       urlGit={linkGitInfoDolar}
       description={t("project_d1")}
       urlImg={imgProject1}
-    />/*
+    />,
     <CardProject
       key="MiViandita"
       title="MiViandita"
@@ -42,7 +42,7 @@ function Project() {
       urlGit={linkGitMiViandita}
       description={t("project_d2")}
       urlImg={imgProject2}
-    />*/
+    />
   ];
 
   return (
