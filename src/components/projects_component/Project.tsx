@@ -15,11 +15,11 @@ import Carousel from "../carousel/Carousel"; // Asegúrate de importar correctam
 function Project() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const linkInfoDolar = "https://info-dolar.netlify.app/";
-  const linkGitInfoDolar = "";
+  const linkGitInfoDolar = "https://github.com/ArleoAgustin/infoDolar";
   const technologiesInfoDolar = [iconReact, iconTypescript];
 
   const linkMiViandita = "";
-  const linkGitMiViandita = "";
+  const linkGitMiViandita = "https://github.com/ArleoAgustin/web-1";
   const technologiesMiViandita = [iconHtml, iconCss, iconJs];
   const { t } = useTranslation();
 
