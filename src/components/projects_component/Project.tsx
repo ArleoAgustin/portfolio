@@ -18,7 +18,7 @@ function Project() {
   const linkGitInfoDolar = "https://github.com/ArleoAgustin/infoDolar";
   const technologiesInfoDolar = [iconReact, iconTypescript];
 
-  const linkMiViandita = "";
+  const linkMiViandita = "https://miviandita.netlify.app/";
   const linkGitMiViandita = "https://github.com/ArleoAgustin/web-1";
   const technologiesMiViandita = [iconHtml, iconCss, iconJs];
   const { t } = useTranslation();
